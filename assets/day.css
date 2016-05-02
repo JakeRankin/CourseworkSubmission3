@@ -111,6 +111,6 @@ img {
     transform: rotate(180deg);
 }
 
-.twitter-timeline {
-
+#twittertext {
+    text-align:center;
 }
