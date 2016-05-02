@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jake Rankin</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="assets/day.css">
+    <link id="pagestyle" rel="alternate stylesheet" type="text/css" href="assets/night.css">
+    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="assets/themes.js"></script>
+</head>
+<body>
+
+<!-- The tags <header>, <main>, and <footer> split the html into sections -->
+
+<header>
+    <button id="nightbutton" onclick="swapStyleSheet('assets/night.css')">Night</button>
+    <button id="daybutton" onclick="swapStyleSheet('assets/day.css')">Day</button>
+<!-- Website Title -->
+    <h1 title="Home Page"><a href="index.html">Jake Rankin</a></h1>
+    <br>
+<!-- Navigation Bar -->
+    <nav class="navigation">
+        <ul>
+            <li id="aboutlink" title="About"><a href="about.html">About</a></li>
+            <li id="careerlink" title="Career & Education"><a href="careereducation.html">Career & Education</a></li>
+            <li id="hobbieslink" title="Hobbies & Interests"><a href="hobbiesinterests.html">Hobbies & Interests</a></li>
+            <li id="contactlink" title="Contact & Information"><a href="contactinformation.html">Contact Information</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- <br> adds spacing between the <header>, <main>, and <footer> -->
+<br>
+<main>
+<!-- Using section so that css can be applied to certain parts of the website. -->
+    <section>
+<!-- Using article inside of a section so that css can be applied on top of the css of the section. -->
+<!-- Using unsemantic to format the layout of this section of the page. -->
+        <article class="grid-container">
+            <h2>Hobbies & Interests</h2>
+            <p class="grid-75 mobile-grid-100 tablet-grid-100">In my spare time I play the bagpipes and have been doing so
+                for nine years. Currently I am playing with the Buchan pipeband in grade 2, 2016 is my first year playing with
+                Buchan pipeband. This is a picture that was taken at the quartets competition at Gordon schools in Huntly, earlier this year.
+<!-- Using <br> to add spacing between the text within the <p> tags. -->
+                <br> <br>
+                Prior to joining Buchan pipebane I played for Deeside Caledonia pipebane in Aberdeen for four years,
+                also in grade 2.
+            </p>
+<!-- Using id to apply formatting to only this image. -->
+            <img id="img1" class="grid-25 mobile-grid-100 tablet-grid-100" src="assets/Huntly March 2016.jpg">
+            <img class="grid-25 mobile-grid-100 tablet-grid-100" src="assets/mercedes.jpg">
+            <p class="grid-75 mobile-grid-100 tablet-grid-100">When I'm not playing bagpipes I like to help out at my uncles
+                garage fixing his computer system and help fix cars.
+                <br> <br>
+                I have also helped my dad restore an old mercedes that required
+                us having to replace the water pump, timing gears, idler pulley, serpentine belts, set the timing, and fix all of the
+                rusted body work. This is a picture of the car once we had finished.
+            </p>
+        </article>
+    </section>
+</main>
+<br>
+<footer>
+    <section>
+        <article>
+            <p>Jake Rankin</p>
+        </article>
+    </section>
+</footer>
+
+</body>
+</html>

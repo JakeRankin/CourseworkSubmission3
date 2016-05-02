@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jake Rankin</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="assets/day.css">
+    <link id="pagestyle" rel="alternate stylesheet" type="text/css" href="assets/night.css">
+    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="assets/themes.js"></script>
+</head>
+<body>
+
+<!-- The tags <header>, <main>, and <footer> split the html into sections -->
+
+<header>
+    <button id="nightbutton" onclick="swapStyleSheet('assets/night.css')">Night</button>
+    <button id="daybutton" onclick="swapStyleSheet('assets/day.css')">Day</button>
+<!-- Website Title -->
+    <h1 title="Home Page"><a href="index.html">Jake Rankin</a></h1>
+    <br>
+<!-- Navigation Bar -->
+    <nav class="navigation">
+        <ul>
+            <li id="aboutlink" title="About"><a href="about.html">About</a></li>
+            <li id="careerlink" title="Career & Education"><a href="careereducation.html">Career & Education</a></li>
+            <li id="hobbieslink" title="Hobbies & Interests"><a href="hobbiesinterests.html">Hobbies & Interests</a></li>
+            <li id="contactlink" title="Contact & Information"><a href="contactinformation.html">Contact Information</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- <br> adds spacing between the <header>, <main>, and <footer> -->
+<br>
+<main>
+<!-- Using section so that css can be applied to certain parts of the website. -->
+    <section>
+<!-- Using article inside of a section so that css can be applied on top of the css of the section. -->
+<!-- Using unsemantic to format the layout of this section of the page. -->
+        <article class="grid-container">
+            <h2>Upcoming Events</h2>
+            <p>
+                On Sunday the fifteenth of May the Banchory pipeband competition will be taking place. I will be there competing with Buchan
+                pipeband in grade 2, were we hope to do well and hope for good weather.
+                <br> <br>
+                I am due to finish year three of a four year BSc in computer network management and design at Rober Gordon University.
+            </p>
+        </article>
+    </section>
+    <section>
+        <article class="grid-container">
+            <h2>Recent Events</h2>
+            <p class="grid-60 mobile-grid-100 tablet-grid-100">
+                In March I competed in the north of Scotland bagpipe quartets competition with Buchan pipeband. The competition took place at
+                Gordon Schools in Huntly, where there were over sixty entries in the competition.
+<!-- Using <br> to add spacing between the text within the <p> tags. -->
+                <br> <br>
+                This was my first competition with the Buchan pipeband and even though it was a small competition I was still nervous.
+                Despite my nerves the band played well, taking first place over the four bands that competed in our grade.
+            </p>
+<!-- Using text formatted in a coloured box to act as a placeholder for future API implementation. -->
+            <iframe class="grid-40 mobile-grid-100 tablet-grid-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2146.6588903913957!2d-
+            2.7872067838624894!3d57.45007856728355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4884526b99fe13b3%3A0xafdb9fcb7266f872!2sThe+G
+            ordon+Schools!5e0!3m2!1sen!2suk!4v1462184748182" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </article>
+    </section>
+</main>
+<br>
+<footer>
+    <section>
+        <article>
+            <p>Jake Rankin</p>
+        </article>
+    </section>
+</footer>
+
+</body>
+</html>
